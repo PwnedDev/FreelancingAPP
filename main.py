@@ -17,12 +17,13 @@ class FreelancingAPP():
         print("Logged in!")
         self.loginstate = True 
         return self.loginstate
+      else:
+        print("Invalid Credentials!")
     elif(login_signup=="R"):
       self.user = input("Username: ")
       password = input("Passowrd: ")
       signon = signupdb(self.user, password)
       print(signon.accdb()) 
-      print(signon.testprint()) 
     else:
       print("Invalid Query")
   def index(self):
